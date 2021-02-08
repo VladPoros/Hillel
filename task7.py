@@ -15,7 +15,7 @@ while True:
         quantity_even += 1
     if number % 2 != 0:
         quantity_not_even += 1
-    if max == 0 and min == 0:
+    if max == number and min == number:
         max = number
         min = number
     if number > max:
