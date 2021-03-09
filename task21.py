@@ -32,10 +32,9 @@ print('Средний балл по классу: ' + str(mid_stud_points))
 
 
 file = open('point_sudents.txt', 'w', encoding='utf-8')
-FinishList = []
+
 for i in newList:
     s = [i[1], ' ' + i[0][:1] + '.', '{:>10}'.format(i[2])]
-    FinishList.append(s)
     for line in s:
         file.write(line)
     file.write('\n')
